@@ -7,21 +7,35 @@ export default function App() {
     return localStorage.getItem('ui-theme') || 'device';
   });
 
-  // useLayoutEffect runs synchronously BEFORE the browser paints the screen,
-  // guaranteeing that the .dark class is added before any pixels are drawn.
   useLayoutEffect(() => {
     const root = window.document.documentElement;
-    root.classList.remove('light', 'dark');
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
-    if (theme === 'device') {
-      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      root.classList.add(systemTheme);
-    } else {
-      root.classList.add(theme);
-    }
+    const applyTheme = () => {
+      root.classList.remove('light', 'dark');
+      if (theme === 'device') {
+        const systemTheme = mediaQuery.matches ? 'dark' : 'light';
+        root.classList.add(systemTheme);
+      } else {
+        root.classList.add(theme);
+      }
+    };
 
-    // Safely save the theme on every change
+    applyTheme();
     localStorage.setItem('ui-theme', theme);
+
+    // Bắt sự kiện khi người dùng thay đổi theme trên hệ điều hành (OS)
+    const handleSystemThemeChange = () => {
+      if (theme === 'device') {
+        applyTheme();
+      }
+    };
+
+    // Lắng nghe sự thay đổi
+    mediaQuery.addEventListener('change', handleSystemThemeChange);
+
+    // Cleanup listener khi unmount hoặc khi theme thay đổi
+    return () => mediaQuery.removeEventListener('change', handleSystemThemeChange);
   }, [theme]);
 
   return (

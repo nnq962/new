@@ -48,7 +48,7 @@ export default function Navigation({ theme, setTheme }: NavigationProps) {
                 {/* Left: User Name */}
                 <div className="flex items-center gap-3 pl-2 pr-1 py-1 shrink-0">
                     <span className="text-sm font-semibold text-slate-900 dark:text-white tracking-wide whitespace-nowrap transition-colors duration-0 md:duration-1000">
-                        Quyet Nguyen
+                        Quyet Ngoc Nguyen
                     </span>
                 </div>
 
