@@ -40,7 +40,7 @@ export default function Navigation({ theme, setTheme }: NavigationProps) {
 
     return (
         <div className={`fixed top-0 left-0 right-0 z-50 flex flex-col items-center px-2 sm:px-4 transition-[padding] duration-500 ease-in-out ${isScrolled ? 'pt-2 sm:pt-4' : 'pt-4 sm:pt-6'}`}>
-            <nav className={`relative w-full max-w-5xl rounded-2xl p-2 sm:p-3 flex items-center justify-between transition-colors duration-0 md:duration-1000 ${isScrolled
+            <nav className={`relative w-full max-w-4xl rounded-2xl p-2 sm:p-3 flex items-center justify-between transition-colors duration-0 md:duration-1000 ${isScrolled
                     ? 'bg-white/20 dark:bg-black/20 backdrop-blur-lg border border-black/10 dark:border-white/10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgb(0,0,0,0.1)]'
                     : 'bg-transparent border border-transparent shadow-none backdrop-blur-none'
                 }`}>

@@ -1,0 +1,386 @@
+[
+    {
+        "id": 1,
+        "title": "Lịch sử đảng cộng sản Việt Nam",
+        "category": "Study Materials",
+        "link": "https://quyetvippro-my.sharepoint.com/:f:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/EiFspwCZKvhKty34KwYWHLgB6LcVOwg8cfPnnRE4VN9vag?e=jb4nM0",
+        "password": null,
+        "updatedAt": "2026-04-29"
+    },
+    {
+        "id": 2,
+        "title": "Tư tưởng Hồ Chí Minh",
+        "category": "Study Materials",
+        "link": "https://quyetvippro-my.sharepoint.com/:f:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/ErzIGEuHAC1OrE1ve9KmTwgB13rxgWFNorYwQSVppY8pmQ?e=bhFRUB",
+        "password": null,
+        "updatedAt": "2026-04-20"
+    },
+    {
+        "id": 3,
+        "title": "Pháp luật đại cương",
+        "category": "Study Materials",
+        "link": "https://quyetvippro-my.sharepoint.com/:f:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/ErhbY8VZRtFNmmLaPFsOdzcB9aS0NE_Np69a5qIklL7I7w?e=fP0INo",
+        "password": null,
+        "updatedAt": "2026-04-29"
+    },
+    {
+        "id": 4,
+        "title": "Chủ nghĩa xã hội khoa học",
+        "category": "Study Materials",
+        "link": "https://quyetvippro-my.sharepoint.com/:f:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/EiXWcIj7ATFJuw72361DtyYB1zfe-sIMff-IbK82EmseDw?e=EhvbYZ",
+        "password": null,
+        "updatedAt": "2026-04-20"
+    },
+    {
+        "id": 5,
+        "title": "Kinh tế chính trị Mác-lênin",
+        "category": "Study Materials",
+        "link": "https://quyetvippro-my.sharepoint.com/:f:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/EjVhsCzugndGu_wXiAWS6u4BsvX-FJKRAwW-cx7huF0b9g?e=FV83ye",
+        "password": null,
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 6,
+        "title": "Chi tiết máy",
+        "category": "Study Materials",
+        "link": "https://quyetvippro-my.sharepoint.com/:f:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/EuI1BNkShWFCn_RJKFZ7FrIBNVcgvJnr-VCoqU0Dr4Rsww?e=UuMMYQ",
+        "password": null,
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 7,
+        "title": "Kỹ thuật vi xử lý",
+        "category": "Study Materials",
+        "link": "https://quyetvippro-my.sharepoint.com/:f:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/Elh5yKCHI61OshbDqKoCSAwB4GO6IZEwlWTpEPGsfEUOfA?e=LK6FAt",
+        "password": null,
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 8,
+        "title": "Kỹ thuật điện tử",
+        "category": "Study Materials",
+        "link": "https://quyetvippro-my.sharepoint.com/:f:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/Eij703AAxMFFsYNacsvjV2EBlt-1qGIDyQWQIirsNtryrg?e=MuizaN",
+        "password": null,
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 9,
+        "title": "Cơ cấu chấp hành và điều khiển",
+        "category": "Study Materials",
+        "link": "https://quyetvippro-my.sharepoint.com/:f:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/EuZ5mDuKWHJEgWnXyVFuqXsBLJXcv-eg6UfEaYf5r6B2JA?e=pBl3fO",
+        "password": null,
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 10,
+        "title": "Kỹ thuật robot",
+        "category": "Study Materials",
+        "link": "https://quyetvippro-my.sharepoint.com/:f:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/ElpkvO2lXAFNjhhDQhl1V3sBv7x9DGWUx2DFVzuTLLLGBA?e=puwGfw",
+        "password": null,
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 11,
+        "title": "Mô hình hoá và mô phỏng hệ thống cơ điện tử",
+        "category": "Study Materials",
+        "link": "https://quyetvippro-my.sharepoint.com/:f:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/Ev0gEdQIxqFEk35HlPKcNKwBCsFtnwobZrqigdDeBv0jzQ?e=3xGdBj",
+        "password": null,
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 12,
+        "title": "Thiết kế hệ thống nhúng",
+        "category": "Study Materials",
+        "link": "https://quyetvippro-my.sharepoint.com/:f:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/EljJWvCOWyZJsA0vSJN6lesB1ZkLmSXeA0auhTZW1aPR_w?e=i84f2Q",
+        "password": null,
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 13,
+        "title": "Thiết kế và phát triển sản phẩm",
+        "category": "Study Materials",
+        "link": "https://quyetvippro-my.sharepoint.com/:f:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/EthK8ZHENzFDvh_0WjWbP-MBIW2c0yxTddgXPuBkcfUbcQ?e=XYXl3D",
+        "password": null,
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 14,
+        "title": "Lập trình hướng đối tượng C++",
+        "category": "Study Materials",
+        "link": "https://quyetvippro-my.sharepoint.com/:u:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/EZpueWrSytlKs4AVe_GNJc8BLB8Q85kBXW7lesTUlSpLag?e=24cNNF",
+        "password": null,
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 15,
+        "title": "Sức bền vật liệu",
+        "category": "Study Materials",
+        "link": "https://quyetvippro-my.sharepoint.com/:f:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/EvUh2eOwqRNOmRHIjiWGcSUB04IK-Y0SoGTPRi__gEPHew?e=1FmQfg",
+        "password": null,
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 16,
+        "title": "Hệ thống tự động thuỷ khí",
+        "category": "Study Materials",
+        "link": "https://quyetvippro-my.sharepoint.com/:f:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/Eri8f33U0rZHqtPgpSQ_cE4BnLzcm1YswhlT0q0fe8t5bA?e=Yh272G",
+        "password": null,
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 17,
+        "title": "Điện tử công suất",
+        "category": "Study Materials",
+        "link": "https://quyetvippro-my.sharepoint.com/:f:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/EmyseFvF1GJOhFJRd5Gcz7oBD7MaahvxafkAd1KF-qF8Gw?e=qbh3UR",
+        "password": null,
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 18,
+        "title": "Điều khiển số",
+        "category": "Study Materials",
+        "link": "https://quyetvippro-my.sharepoint.com/:f:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/EmLGvr1MmGJBuhric_u20mUBq4ykTbZSCW0hK9IuyQ9JkA?e=OZeBNX",
+        "password": null,
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 19,
+        "title": "Thiết kế hệ thống cơ điện tử",
+        "category": "Study Materials",
+        "link": "https://quyetvippro-my.sharepoint.com/:f:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/EqT0Uk0QDgxMmkeHE08Vq3QBFOfdhW_FAwFdMTe4f5ba6A?e=0DmRKg",
+        "password": null,
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 20,
+        "title": "Kỹ thuật tự động hoá",
+        "category": "Study Materials",
+        "link": "https://quyetvippro-my.sharepoint.com/:f:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/EvXT3_dHiy1MjqcukLAYKxgBIpgly4OB3VwKpsSYos_pCw?e=6dBk2T",
+        "password": null,
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 21,
+        "title": "Olympic - Đại số tuyến tính",
+        "category": "Study Materials",
+        "link": "https://quyetvippro-my.sharepoint.com/:f:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/EttcjnEL8gtFuJ3zg8VORKQBMHqyDgND9gH4-8Zm2yNgug?e=HRGbFB",
+        "password": null,
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 22,
+        "title": "Olympic - Chi tiết máy",
+        "category": "Study Materials",
+        "link": "https://quyetvippro-my.sharepoint.com/:f:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/EsyJqLkvUupAlwOZPUkCm_sBdcZFne6SxdMFUcJHmH8Rug?e=gNtPdv",
+        "password": null,
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 23,
+        "title": "Olympic - Ứng dụng tin học trong sức bền vật liệu",
+        "category": "Study Materials",
+        "link": "https://quyetvippro-my.sharepoint.com/:f:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/EiknhE-NR55GtD5XmX_PtAgBr7GDay6mwhNaiZfkZ5FL3Q?e=7Hbkhj",
+        "password": null,
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 24,
+        "title": "Tiếng Anh cơ khí cơ bản 4",
+        "category": "Study Materials",
+        "link": "https://quyetvippro-my.sharepoint.com/:f:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/EtW_hUsMuP1ApPSFVvruOx8BavSLUqy9pDHj4bkNbAQESg?e=2uYLVT",
+        "password": null,
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 25,
+        "title": "Tiếng Anh cơ khí 1",
+        "category": "Study Materials",
+        "link": "https://quyetvippro-my.sharepoint.com/:f:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/Eue3MEVIBuRCgVCZOjKeOs4BKa9ih9V6qJzIktlTmehLMg?e=UaOzAz",
+        "password": null,
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 26,
+        "title": "Tiếng Anh cơ khí 2",
+        "category": "Study Materials",
+        "link": "https://quyetvippro-my.sharepoint.com/:f:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/EqjDl4v4Z6ZBqskgiWcULc4BBgOEI3BFARWjHHlC0X_y_Q?e=roXtTa",
+        "password": null,
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 27,
+        "title": "Windows 10 1809 LTSC original",
+        "category": "Software",
+        "link": "https://quyetvippro-my.sharepoint.com/:u:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/EaoHRXFILxdCi_tNxwsi004BtlXhTNQnKMTGK38WyiXCMg?e=Jkvsjh",
+        "password": null,
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 28,
+        "title": "Windows 10 1909 original",
+        "category": "Software",
+        "link": "https://quyetvippro-my.sharepoint.com/:u:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/Eadt2u5QR-JCpiVbt3pfCjcBbXOVRGm746ChTDhcyMsKPQ?e=ErankN",
+        "password": null,
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 29,
+        "title": "Minitool partition wizard",
+        "category": "Software",
+        "link": "https://quyetvippro-my.sharepoint.com/:u:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/ETKStqHpQpFAkO2VYHDydoUBf5XEA-IAqZ-D1SZvucf8mA?e=mqvwDj",
+        "password": "nnq",
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 30,
+        "title": "Solidwork 2022 SP0 premium",
+        "category": "Software",
+        "link": "https://quyetvippro-my.sharepoint.com/:u:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/EQYN_yfCdJhJoEllH2KzA88BfOZ82xwNWsRb-UrTjx2T0A?e=sgFnEU",
+        "password": "slw2022nnq",
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 31,
+        "title": "Solidword 2021 SP3 premium",
+        "category": "Software",
+        "link": "https://drive.google.com/file/d/1EwkOPgXzcTlSYOVXJzaEoxv3Ebfmb5k4/view?usp=sharing",
+        "password": "solid2021nnq",
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 32,
+        "title": "Solidwork 2020 SP2 premium",
+        "category": "Software",
+        "link": "https://quyetvippro-my.sharepoint.com/:u:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/EZLcZk7bdJROqk9UTehryqYBJaHBYTbAQh9X8MoSFYDL3Q?e=1bDwgw",
+        "password": "slw2020nnqz",
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 33,
+        "title": "Solidwork 2019 SP0 premium",
+        "category": "Software",
+        "link": "https://quyetvippro-my.sharepoint.com/:u:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/Ed6edB3_OzFHkilBll7saPQBn0VWfWpr61zZI32vTFs5xw?e=Kp9RZi",
+        "password": "nnq",
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 34,
+        "title": "Solidwork 2017 SP5 premium",
+        "category": "Software",
+        "link": "https://quyetvippro-my.sharepoint.com/:u:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/EV4BjRGq3HNAg3r4vqF4s8kBQHL23gUaUSRpT5opnBrTgw?e=uu81wz",
+        "password": "slw2017nnqzz",
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 35,
+        "title": "Solidwork 2016 SP5 premium",
+        "category": "Software",
+        "link": "https://quyetvippro-my.sharepoint.com/:u:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/Ec2HvDP8b4hMuuNuYO4jGwkBjM2pyF0bG6Oq4JB1OCWIMg?e=8CvD71",
+        "password": "slw2017znnqz",
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 36,
+        "title": "Solidwork 2010 SP5",
+        "category": "Software",
+        "link": "https://quyetvippro-my.sharepoint.com/:u:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/EU1-JQMIEWRDgaA6RphCn6gBaOcEssv5TOC_nS4yGfCnxA?e=85uUNG",
+        "password": "quyetdz",
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 37,
+        "title": "Adobe photoshop 2021 (pre-activated)",
+        "category": "Software",
+        "link": "https://quyetvippro-my.sharepoint.com/:u:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/ERJHOsLljAhKkMm3pxmKoF8BPz_4DhEc_oDXvYeXIHtmOA?e=uQCQg9",
+        "password": "nnq",
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 38,
+        "title": "Adobe premiere pro 2020 (pre-activated)",
+        "category": "Software",
+        "link": "https://quyetvippro-my.sharepoint.com/:u:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/EXRLFGwR5JNGkwPk4R5taXwBxUlMc3ubF4YmqWwfxAFWLA?e=V16dAt",
+        "password": "quyetdz",
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 39,
+        "title": "Matlab 2017Rb",
+        "category": "Software",
+        "link": "https://quyetvippro-my.sharepoint.com/:u:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/EeIPCIWx6ptLjwysAPtnE4wBQMvLFL_nTgYJG0qOW4vHLA?e=FLHqfO",
+        "password": "www.qthang.net",
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 40,
+        "title": "Foxit PDF Editor Pro",
+        "category": "Software",
+        "link": "https://quyetvippro-my.sharepoint.com/:u:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/Ecr8C10aC2tKlhLXoujUx2wBu7O4z721zhsvMZsj4BOwlw?e=HHlUhN",
+        "password": "phanmemnet.com",
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 41,
+        "title": "Microsoft Office 2021 LTSC",
+        "category": "Software",
+        "link": "https://quyetvippro-my.sharepoint.com/:u:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/Ef8FGOTA15VCvG0uxEQgN_ABzyWbX947JKwGOJFuYS5-iw?e=Lysekv",
+        "password": null,
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 42,
+        "title": "Activation Windows 7,8,10,11 & Office",
+        "category": "Software",
+        "link": "https://quyetvippro-my.sharepoint.com/:u:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/EXlJQpKQxSRKq31Dxxgew84BdBX5NJ31RLdGACFFQGNDWQ?e=3P4abP",
+        "password": "nnq",
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 43,
+        "title": "STM32",
+        "category": "Software",
+        "link": "https://quyetvippro-my.sharepoint.com/:u:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/ES7mW3dLBDxJvQ3tAJt00X4B63g8F6Oo_1Wd_03QA87nlQ?e=JwYb3y",
+        "password": null,
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 44,
+        "title": "Anhdv boot 2021 premium",
+        "category": "Software",
+        "link": "https://quyetvippro-my.sharepoint.com/:u:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/ESqK9Eka5IFJmogqf2EivswBF0m3L2s9WVuaFuj38usJQA?e=5DYapD",
+        "password": "nnq",
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 45,
+        "title": "Proteus 8.11 pro",
+        "category": "Software",
+        "link": "https://quyetvippro-my.sharepoint.com/:u:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/EeVgiemPXfxGjA4HcmpF-9cBr2_8wkGyNVYaQrZMQWgR0Q?e=j6nSZJ",
+        "password": null,
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 46,
+        "title": "Mplab IDE 8.92",
+        "category": "Software",
+        "link": "https://quyetvippro-my.sharepoint.com/:u:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/EccTGAIpI8RAm1YW8QZftFoBat3mNCARfKBMb7zsLzaSFQ?e=n2HzJN",
+        "password": null,
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 47,
+        "title": "Mplab C18 3.10",
+        "category": "Software",
+        "link": "https://quyetvippro-my.sharepoint.com/:u:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/EcpTqbFaiwlHprqNtNWOr_IBiRCLZsnjzYVKTSiXgWpJug?e=ojhvDa",
+        "password": null,
+        "updatedAt": "2026-04-30"
+    },
+    {
+        "id": 48,
+        "title": "WinToHDD technician",
+        "category": "Software",
+        "link": "https://quyetvippro-my.sharepoint.com/:u:/g/personal/quyetnguyen_quyetvippro_onmicrosoft_com/EdPEbvCLLvBFgsbYSi6aiaABo1ko9mvN7MP3yrYbmfQwBQ?e=Fi4S94",
+        "password": "nnq",
+        "updatedAt": "2026-04-30"
+    }
+]
