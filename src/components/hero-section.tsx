@@ -4,7 +4,7 @@ import { FaGithub } from 'react-icons/fa';
 import { RiTelegram2Fill } from "react-icons/ri";
 import { SiZalo } from 'react-icons/si';
 
-const ROLES = ["Developer", "Engineer", "Worker", "Vibe coder"];
+const ROLES = ["Developer", "Engineer", "Worker :((", "Vibe coder"];
 
 const socialLinks = [
   { icon: FaGithub, href: 'https://github.com/nnq962', label: 'GitHub' },
@@ -39,7 +39,7 @@ export default function HeroSection() {
   }, [currentText, isDeleting, currentRoleIndex]);
 
   return (
-    <main className="relative z-10 px-4 max-w-screen-xl mx-auto flex flex-col items-center justify-center min-h-screen text-center">
+    <main id="home" className="relative z-10 px-4 max-w-screen-xl mx-auto flex flex-col items-center justify-center min-h-screen text-center">
 
       {/* Main Heading */}
       <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight whitespace-normal md:whitespace-nowrap">

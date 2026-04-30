@@ -6,10 +6,48 @@ interface NavigationProps {
     setTheme: (theme: string) => void;
 }
 
+const NAV_SECTIONS = ['home', 'resources', 'support'] as const;
+
 export default function Navigation({ theme, setTheme }: NavigationProps) {
     const [showNavMenu, setShowNavMenu] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMounted, setIsMounted] = useState(false);
+    const [activeSection, setActiveSection] = useState<string>('home');
+
+    const scrollToSection = (id: string) => {
+        const el = document.getElementById(id);
+        if (el) {
+            el.scrollIntoView({ behavior: 'smooth' });
+        }
+        setShowNavMenu(false);
+    };
+
+    // Track which section is currently in view
+    // Using a thin detection band in the center of the viewport
+    useEffect(() => {
+        const observers: IntersectionObserver[] = [];
+
+        NAV_SECTIONS.forEach((id) => {
+            const el = document.getElementById(id);
+            if (!el) return;
+
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            setActiveSection(id);
+                        }
+                    });
+                },
+                { threshold: 0, rootMargin: '-50% 0px -50% 0px' }
+            );
+
+            observer.observe(el);
+            observers.push(observer);
+        });
+
+        return () => observers.forEach((o) => o.disconnect());
+    }, []);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -38,10 +76,12 @@ export default function Navigation({ theme, setTheme }: NavigationProps) {
     // Use 'device' for the first 150ms so the pill always slides out from the center on page load
     const activeTheme = isMounted ? theme : 'device';
 
+    const activeSectionIndex = NAV_SECTIONS.indexOf(activeSection as typeof NAV_SECTIONS[number]);
+
     return (
         <div className={`fixed top-0 left-0 right-0 z-50 flex flex-col items-center px-2 sm:px-4 transition-[padding] duration-500 ease-in-out ${isScrolled ? 'pt-2 sm:pt-4' : 'pt-4 sm:pt-6'}`}>
             <nav className={`relative w-full max-w-4xl rounded-2xl p-2 sm:p-3 flex items-center justify-between transition-colors duration-0 md:duration-1000 ${isScrolled
-                    ? 'bg-white/20 dark:bg-black/20 backdrop-blur-lg border border-black/10 dark:border-white/10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgb(0,0,0,0.1)]'
+                    ? 'bg-white/60 dark:bg-black/10 border border-black/10 dark:border-white/10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgb(0,0,0,0.1)]'
                     : 'bg-transparent border border-transparent shadow-none backdrop-blur-none'
                 }`}>
 
@@ -52,17 +92,33 @@ export default function Navigation({ theme, setTheme }: NavigationProps) {
                     </span>
                 </div>
 
-                {/* Center: Navigation Links (Desktop) */}
-                <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center space-x-1 font-medium text-sm bg-black/5 dark:bg-white/10 p-1 rounded-full border border-black/5 dark:border-white/10 transition-colors duration-0 md:duration-1000">
-                    <a href="#" className="px-5 py-2 rounded-full text-slate-900 dark:text-white bg-white dark:bg-white/15 shadow-sm transition-colors duration-0 md:duration-1000">
-                        Home
-                    </a>
-                    <a href="#" className="px-5 py-2 rounded-full text-slate-600 dark:text-gray-400 hover:text-slate-900 dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5 transition-colors duration-0 md:duration-1000">
-                        Resources
-                    </a>
-                    <a href="#" className="px-5 py-2 rounded-full text-slate-600 dark:text-gray-400 hover:text-slate-900 dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5 transition-colors duration-0 md:duration-1000">
-                        Support
-                    </a>
+                {/* Center: Navigation Links (Desktop) — same pattern as resources toggle */}
+                <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 h-11 items-center bg-black/5 dark:bg-white/10 p-1 rounded-full border border-black/5 dark:border-white/10 transition-colors duration-0 md:duration-1000">
+                    {/* Sliding pill (horizontal) */}
+                    <div
+                        className="absolute top-1 bottom-1 left-1 w-[calc(33.333%-2.67px)] rounded-full bg-white/70 dark:bg-white/15 shadow-sm transition-transform duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] pointer-events-none"
+                        style={{
+                            transform: activeSectionIndex === 0
+                                ? 'translateX(0)'
+                                : activeSectionIndex === 1
+                                    ? 'translateX(100%)'
+                                    : 'translateX(200%)',
+                        }}
+                    />
+
+                    {NAV_SECTIONS.map((id) => (
+                        <button
+                            key={id}
+                            onClick={() => scrollToSection(id)}
+                            className={`relative z-10 w-24 h-9 rounded-full text-sm font-medium transition-colors duration-0 md:duration-1000 flex items-center justify-center cursor-pointer ${
+                                activeSection === id
+                                    ? 'text-slate-900 dark:text-white'
+                                    : 'text-slate-500 dark:text-gray-400 hover:text-slate-900 dark:hover:text-white'
+                            }`}
+                        >
+                            {id.charAt(0).toUpperCase() + id.slice(1)}
+                        </button>
+                    ))}
                 </div>
 
                 {/* Right: Theme Toggles & Mobile Menu */}
@@ -119,30 +175,37 @@ export default function Navigation({ theme, setTheme }: NavigationProps) {
             {/* Mobile Navigation Dropdown */}
             <div className="md:hidden absolute top-full left-0 right-0 w-full px-2 sm:px-4 mt-2 sm:mt-4 pointer-events-none">
                 <div 
-                    className={`w-full max-w-5xl mx-auto flex flex-col gap-1 p-2 sm:p-3 bg-white/20 dark:bg-black/20 backdrop-blur-lg border border-black/10 dark:border-white/10 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgb(0,0,0,0.1)] z-50 transition-[opacity,visibility] duration-300 ease-in-out ${
+                    className={`relative w-full max-w-5xl mx-auto flex flex-col gap-1 p-2 sm:p-3 bg-white/60 dark:bg-black/10 border border-black/10 dark:border-white/10 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgb(0,0,0,0.1)] z-50 transition-[opacity,visibility] duration-300 ease-in-out ${
                         showNavMenu 
                             ? 'opacity-100 pointer-events-auto visible' 
                             : 'opacity-0 pointer-events-none invisible'
                     }`}
                 >
-                    <a
-                        href="#"
-                        className="px-4 py-3 rounded-xl text-sm font-medium text-slate-900 dark:text-white bg-white dark:bg-white/15 shadow-sm transition-colors duration-0 md:duration-1000 text-left pointer-events-auto"
-                    >
-                        Home
-                    </a>
-                    <a
-                        href="#"
-                        className="px-4 py-3 rounded-xl text-sm font-medium text-slate-600 dark:text-gray-400 hover:bg-black/5 dark:hover:bg-white/5 hover:text-slate-900 dark:hover:text-white transition-colors duration-0 md:duration-1000 text-left pointer-events-auto"
-                    >
-                        Resources
-                    </a>
-                    <a
-                        href="#"
-                        className="px-4 py-3 rounded-xl text-sm font-medium text-slate-600 dark:text-gray-400 hover:bg-black/5 dark:hover:bg-white/5 hover:text-slate-900 dark:hover:text-white transition-colors duration-0 md:duration-1000 text-left pointer-events-auto"
-                    >
-                        Support
-                    </a>
+                    {/* Sliding pill (Mobile - vertical) */}
+                    <div
+                        className="absolute left-2 right-2 sm:left-3 sm:right-3 h-11 rounded-xl bg-white/70 dark:bg-white/15 shadow-sm transition-transform duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] pointer-events-none"
+                        style={{
+                            transform: activeSectionIndex === 0
+                                ? 'translateY(0)'
+                                : activeSectionIndex === 1
+                                    ? 'translateY(calc(100% + 4px))'
+                                    : 'translateY(calc(200% + 8px))',
+                        }}
+                    />
+
+                    {NAV_SECTIONS.map((id) => (
+                        <button
+                            key={id}
+                            onClick={() => scrollToSection(id)}
+                            className={`relative z-10 h-11 px-4 rounded-xl text-sm font-medium transition-colors duration-0 md:duration-1000 text-left pointer-events-auto cursor-pointer flex items-center ${
+                                activeSection === id
+                                    ? 'text-slate-900 dark:text-white'
+                                    : 'text-slate-600 dark:text-gray-400 hover:text-slate-900 dark:hover:text-white'
+                            }`}
+                        >
+                            {id.charAt(0).toUpperCase() + id.slice(1)}
+                        </button>
+                    ))}
                 </div>
             </div>
         </div>
