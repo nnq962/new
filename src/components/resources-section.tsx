@@ -36,14 +36,6 @@ export default function ResourcesSection() {
             className="relative z-10 px-2 sm:px-4 py-20 md:py-28"
         >
           <div className="max-w-4xl mx-auto">
-            {/* Section Heading */}
-            <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-center mb-3">
-                Resources
-            </h2>
-            <p className="text-center text-slate-500 dark:text-slate-400 mb-10 text-sm md:text-base max-w-lg mx-auto transition-colors duration-0 md:duration-1000">
-                Free study materials and useful software shared for everyone.
-            </p>
-
             {/* Unified Card: Toggle + Search + Table */}
             <div className="rounded-2xl bg-white/60 dark:bg-black/10 backdrop-blur-lg border border-black/5 dark:border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.1)] overflow-hidden transition-colors duration-0 md:duration-1000">
 
