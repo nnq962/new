@@ -33,11 +33,11 @@ export default function ResourcesSection() {
     return (
         <section
             id="resources"
-            className="relative z-10 px-2 sm:px-4 py-20 md:py-28"
+            className="relative z-10 px-4 sm:px-4 pt-[92px] md:pt-[100px] pb-20 md:pb-28"
         >
           <div className="max-w-4xl mx-auto">
             {/* Unified Card: Toggle + Search + Table */}
-            <div className="rounded-2xl bg-white/60 dark:bg-black/10 backdrop-blur-lg border border-black/5 dark:border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.1)] overflow-hidden transition-colors duration-0 md:duration-1000">
+            <div className="rounded-2xl bg-white/60 dark:bg-black/10 backdrop-blur-lg border border-black/10 dark:border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.1)] overflow-hidden transition-colors duration-0 md:duration-1000">
 
                 {/* Toolbar: Toggle + Search */}
                 <div className="flex flex-col sm:flex-row items-center gap-3 px-4 md:px-6 py-4 border-b border-black/5 dark:border-white/10">

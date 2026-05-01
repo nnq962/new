@@ -4,7 +4,7 @@ import { FaGithub } from 'react-icons/fa';
 import { RiTelegram2Fill } from "react-icons/ri";
 import { SiZalo } from 'react-icons/si';
 
-const ROLES = ["Developer", "Engineer", "Worker :((", "Vibe coder"];
+const ROLES = ["Developer", "Engineer", "Worker", "Vibe coder"];
 
 const socialLinks = [
   { icon: FaGithub, href: 'https://github.com/nnq962', label: 'GitHub' },

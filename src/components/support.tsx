@@ -5,11 +5,11 @@ export default function SupportSection() {
     return (
         <section
             id="support"
-            className="relative z-10 px-2 sm:px-4 py-20 md:py-28"
+            className="relative z-10 px-4 sm:px-4 pt-[92px] md:pt-[100px] pb-20 md:pb-28"
         >
             <div className="max-w-4xl mx-auto">
                 {/* Support Card */}
-                <div className="rounded-2xl bg-white/60 dark:bg-black/10 backdrop-blur-xl border border-black/5 dark:border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.05)] dark:shadow-[0_20px_50px_rgba(0,0,0,0.2)] overflow-hidden transition-colors duration-0 md:duration-1000">
+                <div className="rounded-2xl bg-white/60 dark:bg-black/10 backdrop-blur-xl border border-black/10 dark:border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.05)] dark:shadow-[0_20px_50px_rgba(0,0,0,0.2)] overflow-hidden transition-colors duration-0 md:duration-1000">
                     <div className="flex flex-col md:flex-row items-center justify-between gap-12 px-8 py-12 md:px-16 md:py-16">
                         
                         {/* Left Side: Message + Icon Inline */}

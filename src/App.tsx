@@ -41,27 +41,52 @@ export default function App() {
     return () => mediaQuery.removeEventListener('change', handleSystemThemeChange);
   }, [theme]);
 
-  // Always start at the top on page load or reload
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0);
-    if ('scrollRestoration' in window.history) {
-      window.history.scrollRestoration = 'manual';
-    }
-  }, []);
-
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white font-sans selection:bg-blue-500/30 transition-colors duration-0 md:duration-1000 relative overflow-x-hidden">
       
       {/* Premium Ambient Background (Fixed so content scrolls over it) */}
+      {/* Strategy: dual-layer opacity crossfade per blob position.
+          Using transition-colors on composited/blurred layers is unreliable on mobile
+          (GPU cache holds old paint until a scroll triggers re-composite).
+          Fading opacity between two stacked blobs is fully reliable everywhere. */}
       <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-        {/* Top Left: Soft Sky / Deep Blue */}
-        <div className="absolute -top-[20%] -left-[10%] w-[70vw] h-[70vw] bg-sky-200/60 dark:bg-blue-900/15 rounded-full blur-[100px] md:blur-[140px] transform-gpu backface-hidden transition-colors duration-500 md:duration-1000 will-change-transform"></div>
-        
-        {/* Top Right: Warm Amber / Deep Orange */}
-        <div className="absolute -top-[10%] -right-[10%] w-[60vw] h-[60vw] bg-amber-200/60 dark:bg-amber-800/10 rounded-full blur-[100px] md:blur-[140px] transform-gpu backface-hidden transition-colors duration-500 md:duration-1000 will-change-transform"></div>
-        
-        {/* Bottom Center: Soft Blue / Deep Sky */}
-        <div className="absolute -bottom-[20%] left-[10%] w-[80vw] h-[60vw] bg-blue-200/40 dark:bg-indigo-900/10 rounded-full blur-[100px] md:blur-[140px] transform-gpu backface-hidden transition-colors duration-500 md:duration-1000 will-change-transform"></div>
+
+        {/* Top Left position */}
+        {/* Light blob */}
+        <div className="absolute -top-[20%] -left-[10%] w-[70vw] h-[70vw] rounded-full blur-[100px] md:blur-[140px] transform-gpu
+                        bg-sky-200/60
+                        opacity-100 dark:opacity-0
+                        transition-opacity duration-500 md:duration-1000"></div>
+        {/* Dark blob */}
+        <div className="absolute -top-[20%] -left-[10%] w-[70vw] h-[70vw] rounded-full blur-[100px] md:blur-[140px] transform-gpu
+                        bg-blue-900/15
+                        opacity-0 dark:opacity-100
+                        transition-opacity duration-500 md:duration-1000"></div>
+
+        {/* Top Right position */}
+        {/* Light blob */}
+        <div className="absolute -top-[10%] -right-[10%] w-[60vw] h-[60vw] rounded-full blur-[100px] md:blur-[140px] transform-gpu
+                        bg-amber-200/60
+                        opacity-100 dark:opacity-0
+                        transition-opacity duration-500 md:duration-1000"></div>
+        {/* Dark blob */}
+        <div className="absolute -top-[10%] -right-[10%] w-[60vw] h-[60vw] rounded-full blur-[100px] md:blur-[140px] transform-gpu
+                        bg-amber-800/10
+                        opacity-0 dark:opacity-100
+                        transition-opacity duration-500 md:duration-1000"></div>
+
+        {/* Bottom Center position */}
+        {/* Light blob */}
+        <div className="absolute -bottom-[20%] left-[10%] w-[80vw] h-[60vw] rounded-full blur-[100px] md:blur-[140px] transform-gpu
+                        bg-blue-200/40
+                        opacity-100 dark:opacity-0
+                        transition-opacity duration-500 md:duration-1000"></div>
+        {/* Dark blob */}
+        <div className="absolute -bottom-[20%] left-[10%] w-[80vw] h-[60vw] rounded-full blur-[100px] md:blur-[140px] transform-gpu
+                        bg-indigo-900/10
+                        opacity-0 dark:opacity-100
+                        transition-opacity duration-500 md:duration-1000"></div>
+
       </div>
 
       <Navigation theme={theme} setTheme={setTheme} />
