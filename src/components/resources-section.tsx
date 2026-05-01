@@ -37,7 +37,7 @@ export default function ResourcesSection() {
         >
           <div className="max-w-4xl mx-auto">
             {/* Unified Card: Toggle + Search + Table */}
-            <div className="rounded-2xl bg-white/60 dark:bg-black/10 backdrop-blur-lg border border-black/10 dark:border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.1)] overflow-hidden transition-colors duration-0 md:duration-1000">
+            <div className="flex flex-col max-h-[calc(100vh-108px)] md:max-h-[calc(100vh-116px)] rounded-2xl bg-white/60 dark:bg-black/10 backdrop-blur-lg border border-black/10 dark:border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.1)] overflow-hidden transition-colors duration-0 md:duration-1000">
 
                 {/* Toolbar: Toggle + Search */}
                 <div className="flex flex-col sm:flex-row items-center gap-3 px-4 md:px-6 py-4 border-b border-black/5 dark:border-white/10">
@@ -89,22 +89,24 @@ export default function ResourcesSection() {
                     </div>
                 </div>
 
-                {/* Desktop Table */}
-                <div className="hidden md:block">
-                    <table className="w-full text-sm">
-                        <thead>
-                            <tr className="border-b border-black/5 dark:border-white/10 text-left">
-                                <th className="px-6 py-4 font-semibold text-slate-500 dark:text-slate-400 transition-colors duration-0 md:duration-1000">
-                                    Title
-                                </th>
-                                <th className="px-6 py-4 font-semibold text-slate-500 dark:text-slate-400 text-center transition-colors duration-0 md:duration-1000">
-                                    Password
-                                </th>
-                                <th className="px-6 py-4 font-semibold text-slate-500 dark:text-slate-400 text-center transition-colors duration-0 md:duration-1000">
-                                    Action
-                                </th>
-                            </tr>
-                        </thead>
+                {/* Scrollable Container for Table and Mobile List */}
+                <div className="flex-1 overflow-y-auto min-h-0 custom-scrollbar">
+                    {/* Desktop Table */}
+                    <div className="hidden md:block">
+                        <table className="w-full text-sm border-separate border-spacing-0">
+                            <thead className="sticky top-0 z-20 bg-white/60 dark:bg-black/10 backdrop-blur-lg">
+                                <tr className="text-left">
+                                    <th className="px-6 py-4 font-semibold text-slate-500 dark:text-slate-400 border-b border-black/5 dark:border-white/10 transition-colors duration-0 md:duration-1000">
+                                        Title
+                                    </th>
+                                    <th className="px-6 py-4 font-semibold text-slate-500 dark:text-slate-400 text-center border-b border-black/5 dark:border-white/10 transition-colors duration-0 md:duration-1000">
+                                        Password
+                                    </th>
+                                    <th className="px-6 py-4 font-semibold text-slate-500 dark:text-slate-400 text-center border-b border-black/5 dark:border-white/10 transition-colors duration-0 md:duration-1000">
+                                        Action
+                                    </th>
+                                </tr>
+                            </thead>
                         <tbody>
                             {filteredResources.map((resource) => (
                                 <tr
@@ -211,6 +213,7 @@ export default function ResourcesSection() {
                             No results found
                         </div>
                     )}
+                    </div>
                 </div>
             </div>
           </div>
