@@ -16,6 +16,7 @@ export default function App() {
 
     const applyTheme = () => {
       root.classList.remove('light', 'dark');
+      
       if (theme === 'device') {
         const systemTheme = mediaQuery.matches ? 'dark' : 'light';
         root.classList.add(systemTheme);
@@ -42,11 +43,10 @@ export default function App() {
   }, [theme]);
 
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white font-sans selection:bg-blue-500/30 transition-colors duration-0 md:duration-1000 relative overflow-x-hidden flex flex-col">
+    <div id="main-scroll-container" className="h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white font-sans selection:bg-blue-500/30 transition-colors duration-0 md:duration-1000 relative overflow-y-auto snap-container flex flex-col">
 
       {/* Premium Ambient Background (Fixed so content scrolls over it) */}
       <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-        {/* ... (blobs remain the same) */}
         {/* Top Left position */}
         <div className="absolute -top-[20%] -left-[10%] w-[70vw] h-[70vw] rounded-full blur-[100px] md:blur-[140px] transform-gpu bg-sky-200/60 opacity-100 dark:opacity-0 transition-opacity duration-500 md:duration-1000"></div>
         <div className="absolute -top-[20%] -left-[10%] w-[70vw] h-[70vw] rounded-full blur-[100px] md:blur-[140px] transform-gpu bg-blue-900/15 opacity-0 dark:opacity-100 transition-opacity duration-500 md:duration-1000"></div>

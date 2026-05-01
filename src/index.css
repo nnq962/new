@@ -1,3 +1,23 @@
 @import "tailwindcss";
 
 @custom-variant dark (&:is(.dark *));
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+@layer base {
+  /* Snapping will be applied to the main container in App.tsx */
+  .snap-container {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
+
+  section, #home {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+}

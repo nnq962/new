@@ -5,7 +5,7 @@ export default function SupportSection() {
     return (
         <section
             id="support"
-            className="relative z-10 px-4 sm:px-4 pt-[92px] md:pt-[100px] pb-4"
+            className="relative z-10 px-4 sm:px-4 pt-[92px] md:pt-[100px] pb-4 h-screen snap-start"
         >
             <div className="max-w-4xl mx-auto">
                 {/* Unified Final Card: Support + Footer */}

@@ -33,7 +33,7 @@ export default function ResourcesSection() {
     return (
         <section
             id="resources"
-            className="relative z-10 px-4 sm:px-4 pt-[92px] md:pt-[100px] pb-20 md:pb-28"
+            className="relative z-10 px-4 sm:px-4 pt-[92px] md:pt-[100px] pb-20 md:pb-28 h-screen snap-start"
         >
           <div className="max-w-4xl mx-auto">
             {/* Unified Card: Toggle + Search + Table */}

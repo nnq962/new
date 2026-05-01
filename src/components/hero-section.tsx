@@ -39,7 +39,7 @@ export default function HeroSection() {
   }, [currentText, isDeleting, currentRoleIndex]);
 
   return (
-    <main id="home" className="relative z-10 px-4 max-w-screen-xl mx-auto flex flex-col items-center justify-center min-h-screen text-center">
+    <section id="home" className="relative z-10 px-4 max-w-screen-xl mx-auto flex flex-col items-center justify-center h-screen text-center snap-start">
 
       {/* Main Heading */}
       <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight whitespace-normal md:whitespace-nowrap">
@@ -81,6 +81,6 @@ export default function HeroSection() {
           );
         })}
       </div>
-    </main>
+    </section>
   );
 }

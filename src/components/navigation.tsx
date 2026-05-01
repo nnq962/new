@@ -16,8 +16,12 @@ export default function Navigation({ theme, setTheme }: NavigationProps) {
 
     const scrollToSection = (id: string) => {
         const el = document.getElementById(id);
-        if (el) {
-            el.scrollIntoView({ behavior: 'smooth' });
+        const container = document.getElementById('main-scroll-container');
+        if (el && container) {
+            container.scrollTo({
+                top: el.offsetTop,
+                behavior: 'smooth'
+            });
         }
         setShowNavMenu(false);
     };
@@ -26,6 +30,7 @@ export default function Navigation({ theme, setTheme }: NavigationProps) {
     // Using a thin detection band in the center of the viewport
     useEffect(() => {
         const observers: IntersectionObserver[] = [];
+        const container = document.getElementById('main-scroll-container');
 
         NAV_SECTIONS.forEach((id) => {
             const el = document.getElementById(id);
@@ -39,7 +44,11 @@ export default function Navigation({ theme, setTheme }: NavigationProps) {
                         }
                     });
                 },
-                { threshold: 0, rootMargin: '-50% 0px -50% 0px' }
+                { 
+                    threshold: 0, 
+                    root: container,
+                    rootMargin: '-50% 0px -50% 0px' 
+                }
             );
 
             observer.observe(el);
@@ -50,19 +59,22 @@ export default function Navigation({ theme, setTheme }: NavigationProps) {
     }, []);
 
     useEffect(() => {
+        const container = document.getElementById('main-scroll-container');
+        if (!container) return;
+
         const handleScroll = () => {
-            if (window.scrollY > 20) {
+            if (container.scrollTop > 20) {
                 setIsScrolled(true);
             } else {
                 setIsScrolled(false);
             }
         };
 
-        window.addEventListener('scroll', handleScroll);
+        container.addEventListener('scroll', handleScroll);
         // Check initially
         handleScroll();
 
-        return () => window.removeEventListener('scroll', handleScroll);
+        return () => container.removeEventListener('scroll', handleScroll);
     }, []);
 
     // Trigger startup sliding animation 150ms after the initial render
