@@ -16,7 +16,7 @@ export default function App() {
 
     const applyTheme = () => {
       root.classList.remove('light', 'dark');
-      
+
       if (theme === 'device') {
         const systemTheme = mediaQuery.matches ? 'dark' : 'light';
         root.classList.add(systemTheme);
@@ -43,21 +43,11 @@ export default function App() {
   }, [theme]);
 
   return (
-    <div id="main-scroll-container" className="h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white font-sans selection:bg-blue-500/30 transition-colors duration-0 md:duration-1000 relative overflow-y-auto snap-container flex flex-col">
+    <div id="main-scroll-container" className="h-screen bg-zinc-100 dark:bg-zinc-900 text-zinc-900 dark:text-white font-sans selection:bg-blue-500/30 transition-colors duration-500 md:duration-1000 relative overflow-y-auto snap-container flex flex-col">
 
-      {/* Premium Ambient Background (Fixed so content scrolls over it) */}
-      <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-        {/* Top Left position */}
-        <div className="absolute -top-[20%] -left-[10%] w-[70vw] h-[70vw] rounded-full blur-[100px] md:blur-[140px] transform-gpu bg-sky-200/60 opacity-100 dark:opacity-0 transition-opacity duration-500 md:duration-1000"></div>
-        <div className="absolute -top-[20%] -left-[10%] w-[70vw] h-[70vw] rounded-full blur-[100px] md:blur-[140px] transform-gpu bg-blue-900/15 opacity-0 dark:opacity-100 transition-opacity duration-500 md:duration-1000"></div>
-
-        {/* Top Right position */}
-        <div className="absolute -top-[10%] -right-[10%] w-[60vw] h-[60vw] rounded-full blur-[100px] md:blur-[140px] transform-gpu bg-amber-200/60 opacity-100 dark:opacity-0 transition-opacity duration-500 md:duration-1000"></div>
-        <div className="absolute -top-[10%] -right-[10%] w-[60vw] h-[60vw] rounded-full blur-[100px] md:blur-[140px] transform-gpu bg-amber-800/10 opacity-0 dark:opacity-100 transition-opacity duration-500 md:duration-1000"></div>
-
-        {/* Bottom Center position */}
-        <div className="absolute -bottom-[20%] left-[10%] w-[80vw] h-[60vw] rounded-full blur-[100px] md:blur-[140px] transform-gpu bg-blue-200/40 opacity-100 dark:opacity-0 transition-opacity duration-500 md:duration-1000"></div>
-        <div className="absolute -bottom-[20%] left-[10%] w-[80vw] h-[60vw] rounded-full blur-[100px] md:blur-[140px] transform-gpu bg-indigo-900/10 opacity-0 dark:opacity-100 transition-opacity duration-500 md:duration-1000"></div>
+      {/* Premium Dotted Background Pattern */}
+      <div className="fixed inset-0 pointer-events-none z-0">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.12)_1px,transparent_1px)] dark:bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.1)_1px,transparent_1px)] [background-size:24px_24px]"></div>
       </div>
 
       <Navigation theme={theme} setTheme={setTheme} />

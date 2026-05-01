@@ -9,7 +9,7 @@ export default function SupportSection() {
         >
             <div className="max-w-4xl mx-auto">
                 {/* Unified Final Card: Support + Footer */}
-                <div className="flex flex-col min-h-[calc(100vh-108px)] md:min-h-[calc(100vh-116px)] rounded-2xl bg-white/60 dark:bg-black/10 backdrop-blur-xl border border-black/10 dark:border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.05)] dark:shadow-[0_20px_50px_rgba(0,0,0,0.2)] overflow-hidden transition-colors duration-0 md:duration-1000">
+                <div className="flex flex-col min-h-[calc(100vh-108px)] md:min-h-[calc(100vh-116px)] rounded-2xl bg-white/60 dark:bg-zinc-800/50 backdrop-blur-xl border border-black/10 dark:border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.05)] dark:shadow-[0_20px_50px_rgba(0,0,0,0.4)] overflow-hidden transition-colors duration-500 md:duration-1000">
                     
                     {/* Main Support Content (Centered) */}
                     <div className="flex-1 flex flex-col md:flex-row items-center justify-center md:justify-between gap-12 px-8 py-12 md:px-16 md:py-16">
@@ -17,13 +17,13 @@ export default function SupportSection() {
                         {/* Left Side: Message + Icon Inline */}
                         <div className="flex-none md:flex-1 flex flex-col items-center md:items-start text-center md:text-left gap-4">
                             <div className="flex items-center gap-3 mb-2">
-                                <h3 className="text-3xl md:text-4xl font-bold text-slate-800 dark:text-slate-100 transition-colors duration-0 md:duration-1000 tracking-tight">
+                                <h3 className="text-3xl md:text-4xl font-bold text-zinc-800 dark:text-zinc-100 transition-colors duration-500 md:duration-1000 tracking-tight">
                                     Buy Me a Coffee
                                 </h3>
-                                <Coffee size={32} className="text-amber-600 dark:text-amber-400 transition-colors duration-0 md:duration-1000 shrink-0" />
+                                <Coffee size={32} className="text-amber-600 dark:text-amber-400 transition-colors duration-500 md:duration-1000 shrink-0" />
                             </div>
 
-                            <p className="text-lg text-slate-500 dark:text-slate-400 leading-relaxed transition-colors duration-0 md:duration-1000 max-w-md">
+                            <p className="text-lg text-zinc-500 dark:text-zinc-400 leading-relaxed transition-colors duration-500 md:duration-1000 max-w-md">
                                 If you find my work helpful, consider buying me a coffee. Your support keeps me motivated to create and share more free resources.
                             </p>
                         </div>
@@ -43,7 +43,7 @@ export default function SupportSection() {
                             </div>
 
                             {/* Thank you note */}
-                            <p className="inline-flex items-center gap-2 text-sm font-medium text-slate-400 dark:text-slate-500 transition-colors duration-0 md:duration-1000">
+                            <p className="inline-flex items-center gap-2 text-sm font-medium text-zinc-400 dark:text-zinc-500 transition-colors duration-500 md:duration-1000">
                                 Thank you for your support
                                 <span className="relative flex h-3.5 w-3.5 items-center justify-center">
                                     <Heart size={14} className="animate-ping absolute inline-flex text-red-400 opacity-75 fill-current" />
@@ -56,10 +56,10 @@ export default function SupportSection() {
                     {/* Integrated Footer Section (Sticky to bottom of card) */}
                     <div className="px-8 py-8 md:px-16 border-t border-black/5 dark:border-white/5 bg-black/[0.02] dark:bg-white/[0.02]">
                         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-                            <p className="text-sm text-slate-500 dark:text-slate-400 transition-colors duration-0 md:duration-1000 flex items-center gap-1.5">
-                                Made with <Heart size={14} className="text-red-500 fill-current" /> by <span className="font-semibold text-slate-900 dark:text-white">Quyet Ngoc Nguyen</span>
+                            <p className="text-sm text-zinc-500 dark:text-zinc-400 transition-colors duration-500 md:duration-1000 flex items-center gap-1.5">
+                                Made with <Heart size={14} className="text-red-500 fill-current" /> by <span className="font-semibold text-zinc-900 dark:text-white">Quyet Ngoc Nguyen</span>
                             </p>
-                            <p className="text-xs text-slate-400 dark:text-slate-500 transition-colors duration-0 md:duration-1000">
+                            <p className="text-xs text-zinc-400 dark:text-zinc-500 transition-colors duration-500 md:duration-1000">
                                 © 2026 All rights reserved.
                             </p>
                         </div>

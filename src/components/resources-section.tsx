@@ -37,7 +37,7 @@ export default function ResourcesSection() {
         >
           <div className="max-w-4xl mx-auto">
             {/* Unified Card: Toggle + Search + Table */}
-            <div className="flex flex-col max-h-[calc(100vh-108px)] md:max-h-[calc(100vh-116px)] rounded-2xl bg-white/60 dark:bg-black/10 backdrop-blur-lg border border-black/10 dark:border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.1)] overflow-hidden transition-colors duration-0 md:duration-1000">
+            <div className="flex flex-col max-h-[calc(100vh-108px)] md:max-h-[calc(100vh-116px)] rounded-2xl bg-white/60 dark:bg-zinc-800/50 backdrop-blur-lg border border-black/10 dark:border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.3)] overflow-hidden transition-colors duration-500 md:duration-1000">
 
                 {/* Toolbar: Toggle + Search */}
                 <div className="flex flex-col">
@@ -46,19 +46,19 @@ export default function ResourcesSection() {
                         <div className="relative w-full sm:w-auto">
                             <Search
                                 size={16}
-                                className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 dark:text-slate-500 pointer-events-none"
+                                className="absolute left-3 top-1/2 -translate-y-1/2 text-zinc-400 dark:text-zinc-500 pointer-events-none"
                             />
                             <input
                                 type="text"
                                 placeholder="Search..."
                                 value={searchQuery}
                                 onChange={(e) => setSearchQuery(e.target.value)}
-                                className="w-full sm:w-80 h-11 pl-9 pr-4 rounded-full bg-black/5 dark:bg-white/10 border border-black/5 dark:border-white/10 text-sm text-slate-800 dark:text-slate-200 placeholder:text-slate-400 dark:placeholder:text-slate-500 outline-none focus:ring-2 focus:ring-sky-500/30 dark:focus:ring-sky-400/30 transition-all duration-0 md:duration-1000"
+                                className="w-full sm:w-80 h-11 pl-9 pr-4 rounded-full bg-black/5 dark:bg-white/10 border border-black/5 dark:border-white/10 text-sm text-zinc-800 dark:text-zinc-200 placeholder:text-zinc-400 dark:placeholder:text-zinc-500 outline-none focus:ring-2 focus:ring-sky-500/30 dark:focus:ring-sky-400/30 transition-all duration-500 md:duration-1000"
                             />
                         </div>
 
                         {/* Sliding Toggle */}
-                        <div className="relative h-11 inline-flex items-center bg-black/5 dark:bg-white/10 p-1 rounded-full border border-black/5 dark:border-white/10 shrink-0 sm:ml-auto transition-colors duration-0 md:duration-1000">
+                        <div className="relative h-11 inline-flex items-center bg-black/5 dark:bg-white/10 p-1 rounded-full border border-black/5 dark:border-white/10 shrink-0 sm:ml-auto transition-colors duration-500 md:duration-1000">
                             {/* Sliding pill */}
                             <div
                                 className="absolute top-1 bottom-1 left-1 w-[calc(50%-4px)] rounded-full bg-white dark:bg-white/15 shadow-sm transition-transform duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] pointer-events-none"
@@ -71,18 +71,18 @@ export default function ResourcesSection() {
                             />
                             <button
                                 onClick={() => setActiveTab('materials')}
-                                className={`relative z-10 w-36 sm:w-40 h-9 rounded-full text-sm font-medium transition-colors duration-0 md:duration-1000 flex items-center justify-center ${activeTab === 'materials'
-                                        ? 'text-slate-900 dark:text-white'
-                                        : 'text-slate-500 dark:text-gray-400 hover:text-slate-900 dark:hover:text-white'
+                                className={`relative z-10 w-36 sm:w-40 h-9 rounded-full text-sm font-medium transition-colors duration-500 md:duration-1000 flex items-center justify-center ${activeTab === 'materials'
+                                        ? 'text-zinc-900 dark:text-white'
+                                        : 'text-zinc-500 dark:text-gray-400 hover:text-zinc-900 dark:hover:text-white'
                                     }`}
                             >
                                 Materials
                             </button>
                             <button
                                 onClick={() => setActiveTab('software')}
-                                className={`relative z-10 w-36 sm:w-40 h-9 rounded-full text-sm font-medium transition-colors duration-0 md:duration-1000 flex items-center justify-center ${activeTab === 'software'
-                                        ? 'text-slate-900 dark:text-white'
-                                        : 'text-slate-500 dark:text-gray-400 hover:text-slate-900 dark:hover:text-white'
+                                className={`relative z-10 w-36 sm:w-40 h-9 rounded-full text-sm font-medium transition-colors duration-500 md:duration-1000 flex items-center justify-center ${activeTab === 'software'
+                                        ? 'text-zinc-900 dark:text-white'
+                                        : 'text-zinc-500 dark:text-gray-400 hover:text-zinc-900 dark:hover:text-white'
                                     }`}
                             >
                                 Software
@@ -95,13 +95,13 @@ export default function ResourcesSection() {
                         <table className="w-full text-sm border-separate border-spacing-0 table-fixed">
                             <thead>
                                 <tr className="text-left">
-                                    <th className="px-6 py-4 font-semibold text-slate-500 dark:text-slate-400 transition-colors duration-0 md:duration-1000 w-[60%]">
+                                    <th className="px-6 py-4 font-semibold text-zinc-500 dark:text-zinc-400 transition-colors duration-500 md:duration-1000 w-[60%]">
                                         Title
                                     </th>
-                                    <th className="px-6 py-4 font-semibold text-slate-500 dark:text-slate-400 text-center transition-colors duration-0 md:duration-1000 w-[20%]">
+                                    <th className="px-6 py-4 font-semibold text-zinc-500 dark:text-zinc-400 text-center transition-colors duration-500 md:duration-1000 w-[20%]">
                                         Password
                                     </th>
-                                    <th className="px-6 py-4 font-semibold text-slate-500 dark:text-slate-400 text-center transition-colors duration-0 md:duration-1000 w-[20%]">
+                                    <th className="px-6 py-4 font-semibold text-zinc-500 dark:text-zinc-400 text-center transition-colors duration-500 md:duration-1000 w-[20%]">
                                         Action
                                     </th>
                                 </tr>
@@ -123,10 +123,10 @@ export default function ResourcesSection() {
                                     >
                                         {/* Title */}
                                         <td className="px-6 py-4 w-[60%]">
-                                            <span className="font-medium text-slate-800 dark:text-slate-200 transition-colors duration-0 md:duration-1000">
+                                            <span className="font-medium text-zinc-800 dark:text-zinc-200 transition-colors duration-500 md:duration-1000">
                                                 {resource.title}
                                             </span>
-                                            <span className="block text-xs text-slate-400 dark:text-slate-500 mt-0.5 transition-colors duration-0 md:duration-1000">
+                                            <span className="block text-xs text-zinc-400 dark:text-zinc-500 mt-0.5 transition-colors duration-500 md:duration-1000">
                                                 Updated: {resource.updatedAt}
                                             </span>
                                         </td>
@@ -134,12 +134,12 @@ export default function ResourcesSection() {
                                         {/* Password */}
                                         <td className="px-6 py-4 text-center w-[20%]">
                                             {resource.password ? (
-                                                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100/80 dark:bg-amber-500/10 border border-amber-200 dark:border-amber-500/20 text-amber-700 dark:text-amber-400 text-xs font-mono font-medium transition-colors duration-0 md:duration-1000">
+                                                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100/80 dark:bg-amber-500/10 border border-amber-200 dark:border-amber-500/20 text-amber-700 dark:text-amber-400 text-xs font-mono font-medium transition-colors duration-500 md:duration-1000">
                                                     <Lock size={12} />
                                                     {resource.password}
                                                 </span>
                                             ) : (
-                                                <span className="text-xs text-slate-400 dark:text-slate-500 transition-colors duration-0 md:duration-1000">
+                                                <span className="text-xs text-zinc-400 dark:text-zinc-500 transition-colors duration-500 md:duration-1000">
                                                     —
                                                 </span>
                                             )}
@@ -164,7 +164,7 @@ export default function ResourcesSection() {
                                 <tr>
                                     <td
                                         colSpan={3}
-                                        className="px-6 py-12 text-center text-slate-400 dark:text-slate-500"
+                                        className="px-6 py-12 text-center text-zinc-400 dark:text-zinc-500"
                                     >
                                         No results found
                                     </td>
@@ -183,21 +183,21 @@ export default function ResourcesSection() {
                         >
                             {/* Info */}
                             <div className="flex-1 min-w-0">
-                                <p className="font-medium text-sm text-slate-800 dark:text-slate-200 truncate transition-colors duration-0 md:duration-1000">
+                                <p className="font-medium text-sm text-zinc-800 dark:text-zinc-200 truncate transition-colors duration-500 md:duration-1000">
                                     {resource.title}
                                 </p>
                                 <div className="flex items-center gap-2 mt-1.5">
                                     {resource.password ? (
-                                        <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-amber-100/80 dark:bg-amber-500/10 border border-amber-200 dark:border-amber-500/20 text-amber-700 dark:text-amber-400 text-[11px] font-mono font-medium transition-colors duration-0 md:duration-1000">
+                                        <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-amber-100/80 dark:bg-amber-500/10 border border-amber-200 dark:border-amber-500/20 text-amber-700 dark:text-amber-400 text-[11px] font-mono font-medium transition-colors duration-500 md:duration-1000">
                                             <Lock size={10} />
                                             {resource.password}
                                         </span>
                                     ) : (
-                                        <span className="text-[11px] text-slate-400 dark:text-slate-500 transition-colors duration-0 md:duration-1000">
+                                        <span className="text-[11px] text-zinc-400 dark:text-zinc-500 transition-colors duration-500 md:duration-1000">
                                             No password
                                         </span>
                                     )}
-                                    <span className="text-[11px] text-slate-400 dark:text-slate-500 transition-colors duration-0 md:duration-1000">
+                                    <span className="text-[11px] text-zinc-400 dark:text-zinc-500 transition-colors duration-500 md:duration-1000">
                                         {resource.updatedAt}
                                     </span>
                                 </div>
@@ -217,7 +217,7 @@ export default function ResourcesSection() {
                     ))}
 
                     {filteredResources.length === 0 && (
-                        <div className="px-4 py-12 text-center text-sm text-slate-400 dark:text-slate-500">
+                        <div className="px-4 py-12 text-center text-sm text-zinc-400 dark:text-zinc-500">
                             No results found
                         </div>
                     )}

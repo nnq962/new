@@ -44,14 +44,14 @@ export default function HeroSection() {
       {/* Main Heading */}
       <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight whitespace-normal md:whitespace-nowrap">
         Hi, I'm a <br className="md:hidden" />{' '}
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-emerald-600 dark:from-blue-400 dark:via-indigo-400 dark:to-emerald-400 transition-colors duration-0 md:duration-1000">
+        <span className="text-blue-600 dark:text-blue-400 transition-colors duration-500 md:duration-1000">
           {currentText}
         </span>
-        <span className="animate-pulse text-slate-900 dark:text-white">|</span>
+        <span className="animate-pulse text-zinc-900 dark:text-white">|</span>
       </h1>
       
       {/* Subheading */}
-      <p className="text-lg md:text-xl text-slate-600 dark:text-gray-400 max-w-2xl mb-12 leading-relaxed transition-colors duration-0 md:duration-1000">
+      <p className="text-lg md:text-xl text-zinc-600 dark:text-gray-400 max-w-2xl mb-12 leading-relaxed transition-colors duration-500 md:duration-1000">
         I hope you enjoy this page.
       </p>
       
@@ -66,15 +66,15 @@ export default function HeroSection() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={link.label}
-              className="group relative flex items-center justify-center w-14 h-14 rounded-full bg-white dark:bg-slate-900 border border-black/5 dark:border-white/10 shadow-[0_4px_20px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_20px_rgba(255,255,255,0.05)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.1)] dark:hover:shadow-[0_8px_30px_rgba(255,255,255,0.1)] hover:scale-110 transition-all duration-300"
+              className="group relative flex items-center justify-center w-14 h-14 rounded-full bg-white dark:bg-zinc-900 border border-black/5 dark:border-white/10 shadow-[0_4px_20px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_20px_rgba(255,255,255,0.05)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.1)] dark:hover:shadow-[0_8px_30px_rgba(255,255,255,0.1)] hover:scale-110 transition-all duration-300"
             >
               {/* Hover gradient background */}
               <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-sky-500/10 to-amber-500/10 dark:from-sky-500/20 dark:to-amber-500/15 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               
-              <Icon className="w-6 h-6 text-slate-700 dark:text-slate-300 group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors duration-300 relative z-10" />
+              <Icon className="w-6 h-6 text-zinc-700 dark:text-zinc-300 group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors duration-300 relative z-10" />
               
               {/* Tooltip */}
-              <span className="absolute -bottom-10 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-2 transition-all duration-300 text-xs font-medium text-slate-600 dark:text-slate-300 bg-white dark:bg-slate-800 px-2 py-1 rounded-md shadow-lg border border-black/5 dark:border-white/5 pointer-events-none">
+              <span className="absolute -bottom-10 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-2 transition-all duration-300 text-xs font-medium text-zinc-600 dark:text-zinc-300 bg-white dark:bg-zinc-800 px-2 py-1 rounded-md shadow-lg border border-black/5 dark:border-white/5 pointer-events-none">
                 {link.label}
               </span>
             </a>
