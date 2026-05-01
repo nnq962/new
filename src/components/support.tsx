@@ -1,4 +1,4 @@
-import { Coffee, Heart, Circle } from 'lucide-react';
+import { Coffee, Heart } from 'lucide-react';
 import qrImage from '../assets/qr.png';
 
 export default function SupportSection() {
