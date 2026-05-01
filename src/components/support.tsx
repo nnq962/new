@@ -1,4 +1,4 @@
-import { Coffee, Heart } from 'lucide-react';
+import { Coffee, Heart, Circle } from 'lucide-react';
 import qrImage from '../assets/qr.png';
 
 export default function SupportSection() {
@@ -32,8 +32,7 @@ export default function SupportSection() {
                         <div className="flex flex-col items-center gap-6 shrink-0">
                             {/* QR Code Container */}
                             <div className="group relative p-2">
-                                <div className="absolute inset-0 bg-amber-400/20 dark:bg-amber-400/10 rounded-2xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                                <div className="relative rounded-2xl bg-white dark:bg-white/95 p-4 shadow-2xl border border-black/5 dark:border-white/10 transition-all duration-500 group-hover:scale-[1.02]">
+                                <div className="relative rounded-2xl bg-white/60 dark:bg-zinc-800/50 backdrop-blur-md p-4 shadow-xl border border-black/10 dark:border-white/10 transition-all duration-500 hover:scale-[1.05] hover:bg-white dark:hover:bg-zinc-700/60">
                                     <img
                                         src={qrImage}
                                         alt="Support QR Code"
@@ -45,8 +44,8 @@ export default function SupportSection() {
                             {/* Thank you note */}
                             <p className="inline-flex items-center gap-2 text-sm font-medium text-zinc-400 dark:text-zinc-500 transition-colors duration-500 md:duration-1000">
                                 Thank you for your support
-                                <span className="relative flex h-3.5 w-3.5 items-center justify-center">
-                                    <Heart size={14} className="animate-ping absolute inline-flex text-red-400 opacity-75 fill-current" />
+                                <span className="relative flex h-3 w-3 items-center justify-center">
+                                    <span className="animate-ping-slow absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75 translate-x-[-0.2px]"></span>
                                     <Heart size={14} className="relative inline-flex text-red-500 fill-current" />
                                 </span>
                             </p>

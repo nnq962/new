@@ -4,7 +4,7 @@ import { FaGithub } from 'react-icons/fa';
 import { RiTelegram2Fill } from "react-icons/ri";
 import { SiZalo } from 'react-icons/si';
 
-const ROLES = ["Developer", "Engineer", "Worker", "Vibe coder"];
+const ROLES = ["Developer", "AI Engineer", "Worker", "Vibe coder"];
 
 const socialLinks = [
   { icon: FaGithub, href: 'https://github.com/nnq962', label: 'GitHub' },
@@ -52,7 +52,7 @@ export default function HeroSection() {
       
       {/* Subheading */}
       <p className="text-lg md:text-xl text-zinc-600 dark:text-gray-400 max-w-2xl mb-12 leading-relaxed transition-colors duration-500 md:duration-1000">
-        I hope you enjoy this page.
+        I hope you enjoy it.
       </p>
       
       {/* Social Links */}
@@ -66,12 +66,9 @@ export default function HeroSection() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={link.label}
-              className="group relative flex items-center justify-center w-14 h-14 rounded-full bg-white dark:bg-zinc-900 border border-black/5 dark:border-white/10 shadow-[0_4px_20px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_20px_rgba(255,255,255,0.05)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.1)] dark:hover:shadow-[0_8px_30px_rgba(255,255,255,0.1)] hover:scale-110 transition-all duration-300"
+              className="group relative flex items-center justify-center w-14 h-14 rounded-full bg-white/60 dark:bg-zinc-800/50 backdrop-blur-md border border-black/10 dark:border-white/10 shadow-sm hover:shadow-md hover:bg-white dark:hover:bg-zinc-700/60 hover:scale-110 transition-all duration-300"
             >
-              {/* Hover gradient background */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-sky-500/10 to-amber-500/10 dark:from-sky-500/20 dark:to-amber-500/15 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              
-              <Icon className="w-6 h-6 text-zinc-700 dark:text-zinc-300 group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors duration-300 relative z-10" />
+              <Icon className="w-6 h-6 text-zinc-700 dark:text-zinc-300 group-hover:text-zinc-900 dark:group-hover:text-white transition-colors duration-300 relative z-10" />
               
               {/* Tooltip */}
               <span className="absolute -bottom-10 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-2 transition-all duration-300 text-xs font-medium text-zinc-600 dark:text-zinc-300 bg-white dark:bg-zinc-800 px-2 py-1 rounded-md shadow-lg border border-black/5 dark:border-white/5 pointer-events-none">

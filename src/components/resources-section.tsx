@@ -134,7 +134,7 @@ export default function ResourcesSection() {
                                         {/* Password */}
                                         <td className="px-6 py-4 text-center w-[20%]">
                                             {resource.password ? (
-                                                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100/80 dark:bg-amber-500/10 border border-amber-200 dark:border-amber-500/20 text-amber-700 dark:text-amber-400 text-xs font-mono font-medium transition-colors duration-500 md:duration-1000">
+                                                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-rose-100/80 dark:bg-rose-500/10 border border-rose-200 dark:border-rose-500/20 text-rose-700 dark:text-rose-400 text-xs font-mono font-medium transition-colors duration-500 md:duration-1000">
                                                     <Lock size={12} />
                                                     {resource.password}
                                                 </span>
@@ -152,7 +152,7 @@ export default function ResourcesSection() {
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 aria-label={`Download ${resource.title}`}
-                                                className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-sky-100/80 dark:bg-sky-500/10 border border-sky-200 dark:border-sky-500/20 text-sky-600 dark:text-sky-400 hover:bg-sky-200 dark:hover:bg-sky-500/20 hover:scale-110 active:scale-95 transition-all duration-200"
+                                                className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-emerald-100/80 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/20 text-emerald-600 dark:text-emerald-400 hover:bg-emerald-200 dark:hover:bg-emerald-500/20 hover:scale-110 active:scale-95 transition-all duration-200"
                                             >
                                                 <Download size={16} strokeWidth={2.5} />
                                             </a>
@@ -188,7 +188,7 @@ export default function ResourcesSection() {
                                 </p>
                                 <div className="flex items-center gap-2 mt-1.5">
                                     {resource.password ? (
-                                        <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-amber-100/80 dark:bg-amber-500/10 border border-amber-200 dark:border-amber-500/20 text-amber-700 dark:text-amber-400 text-[11px] font-mono font-medium transition-colors duration-500 md:duration-1000">
+                                        <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-rose-100/80 dark:bg-rose-500/10 border border-rose-200 dark:border-rose-500/20 text-rose-700 dark:text-rose-400 text-[11px] font-mono font-medium transition-colors duration-500 md:duration-1000">
                                             <Lock size={10} />
                                             {resource.password}
                                         </span>
@@ -209,7 +209,7 @@ export default function ResourcesSection() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label={`Download ${resource.title}`}
-                                className="shrink-0 inline-flex items-center justify-center w-9 h-9 rounded-full bg-sky-100/80 dark:bg-sky-500/10 border border-sky-200 dark:border-sky-500/20 text-sky-600 dark:text-sky-400 hover:bg-sky-200 dark:hover:bg-sky-500/20 active:scale-95 transition-all duration-200"
+                                className="shrink-0 inline-flex items-center justify-center w-9 h-9 rounded-full bg-emerald-100/80 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/20 text-emerald-600 dark:text-emerald-400 hover:bg-emerald-200 dark:hover:bg-emerald-500/20 active:scale-95 transition-all duration-200"
                             >
                                 <Download size={16} strokeWidth={2.5} />
                             </a>

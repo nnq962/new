@@ -21,3 +21,45 @@ body {
     scroll-snap-stop: always;
   }
 }
+
+@layer components {
+  /* Specific width for nested scrollable areas like tables */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Hide the main scrollbar for a cleaner look */
+  #main-scroll-container::-webkit-scrollbar {
+    display: none;
+  }
+  #main-scroll-container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+  }
+
+  .dark ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .dark ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  /* Custom Slow Ping Animation */
+  .animate-ping-slow {
+    animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+}
