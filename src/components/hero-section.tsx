@@ -1,16 +1,18 @@
 import { useState, useEffect } from 'react';
-import { Mail } from 'lucide-react';
+import { LuMail } from "react-icons/lu";
 import { FaGithub } from 'react-icons/fa';
 import { RiTelegram2Fill } from "react-icons/ri";
 import { SiZalo } from 'react-icons/si';
+import { FaFacebook } from "react-icons/fa";
 
 const ROLES = ["Developer", "AI Engineer", "Worker", "Vibe coder"];
 
 const socialLinks = [
   { icon: FaGithub, href: 'https://github.com/nnq962', label: 'GitHub' },
+  { icon: FaFacebook, href: 'https://www.facebook.com/quyet.nguyen.official', label: 'Facebook' },
   { icon: RiTelegram2Fill, href: 'https://t.me/quyetnguyenngoc', label: 'Telegram' },
   { icon: SiZalo, href: 'https://zalo.me/0356269927', label: 'Zalo' },
-  { icon: Mail, href: 'mailto:quyet.nguyen.official@gmail.com', label: 'Email' },
+  { icon: LuMail, href: 'mailto:quyet.nguyen.official@gmail.com', label: 'Email' },
 ];
 
 export default function HeroSection() {
