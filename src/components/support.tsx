@@ -12,7 +12,7 @@ export default function SupportSection() {
                 <div className="flex flex-col min-h-[calc(100vh-108px)] md:min-h-[calc(100vh-116px)] rounded-2xl bg-white/60 dark:bg-zinc-800/50 backdrop-blur-xl border border-black/10 dark:border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.05)] dark:shadow-[0_20px_50px_rgba(0,0,0,0.4)] overflow-hidden transition-colors duration-500 md:duration-1000">
                     
                     {/* Main Support Content (Centered) */}
-                    <div className="flex-1 flex flex-col md:flex-row items-center justify-center md:justify-between gap-12 px-8 py-12 md:px-16 md:py-16">
+                    <div className="flex-1 flex flex-col md:flex-row items-center justify-center md:justify-between gap-4 md:gap-12 px-8 py-8 md:px-16 md:py-16">
                         
                         {/* Left Side: Message + Icon Inline */}
                         <div className="flex-none md:flex-1 flex flex-col items-center md:items-start text-center md:text-left gap-4">
